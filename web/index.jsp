@@ -12,14 +12,14 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Factorial!</h1>
             <%-- start web service invocation --%><hr/>
     <%
     try {
 	services.FactorialWebService_Service service = new services.FactorialWebService_Service();
 	services.FactorialWebService port = service.getFactorialWebServicePort();
 	 // TODO initialize WS operation arguments here
-	int factorial = 0;
+	int factorial = 4;
 	// TODO process result here
 	int result = port.factorial(factorial);
 	out.println("Result = "+result);
